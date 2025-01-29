@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ALBUM DE FOTOS</title>
+  </head>
+  <body>
+    <header>ALBUM DE FOTOS</header>
+    <section id="albumes">
+      <template id="template">
+        <div class="album">
+          <h3 class="album-nombre"></h3>
+          <p class="album-descripcion"></p>
+          <img />
+        </div>
+      </template>
+    </section>
+    <form id="formulario">
+      <label for="paginas">Número de páginas</label>
+      <input type="number" name="paginas" id="paginas" />
+
+      <label for="calidad">Calidad del Papel</label>
+      <select name="calidad" id="calidad">
+        <option value="1">Baja</option>
+        <option value="1.2">Media</option>
+        <option value="1.5">Alta</option>
+      </select>
+      <label for="iva">IVA</label>
+      <input type="checkbox" name="iva" id="iva" />
+      <button type="submit" id="calcular">Calcular coste</button>
+    </form>
+    <div id="coste"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
