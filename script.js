@@ -68,6 +68,7 @@ function cargarAlbumes(albumes) {
   });
 }
 
+
 document.getElementById("formulario").addEventListener("submit", (e) => {
   e.preventDefault();
   calcularCoste();
